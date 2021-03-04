@@ -2,16 +2,22 @@
 
 using namespace std;
 
-int main()
-{
-int x,y,suma;
-cout<< "Ingrese el primer numero enetero\n";
-cin>> x;
-cout<< "Ingrese el segundo numero entero\n";
-cin>> y;
-suma = x+y;
-cout<< "El resutado de la suma es:\n";
-cout<< suma;
-cout<< endl;
+void Max(int a, int b);
+int main(){
+    int x,y, Max;
+ cout << ("Introduzca el valor del primer numero:");
+ cin  >> x;
+ cout << ("Introduzca el valor del segundo numero:");
+ cin  >> y;
+
+if (x>y){
+    cout <<("&x es mayor \n",x);
+}
+else if (x<y){
+    cout<<("&y es mayor \n",y);
+}
+else
+    cout <<("Error \n");
 return 0;
 }
+
