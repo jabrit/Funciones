@@ -2,22 +2,21 @@
 
 using namespace std;
 
-void Max(int a, int b);
+int Factorial(int a);
 int main(){
-    int x,y, Max;
- cout << ("Introduzca el valor del primer numero:");
- cin  >> x;
- cout << ("Introduzca el valor del segundo numero:");
- cin  >> y;
+    int j;
+    cout << "Introduzca el valor del numero" << endl;
+    cin >> j;
+    int fact = Factorial(j);
+    cout << ("El %d! es : %d\n",j,fact);
 
-if (x>y){
-    cout <<("&x es mayor \n",x);
+    return 0;
 }
-else if (x<y){
-    cout<<("&y es mayor \n",y);
+int Factorial (int a){
+int i;
+int resultado = 1;
+for (i = 1; i <= a; i++){
+        resultado *= i;
 }
-else
-    cout <<("Error \n");
-return 0;
+return resultado;
 }
-
